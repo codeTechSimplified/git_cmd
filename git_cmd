@@ -1,0 +1,61 @@
+>>>>>>>>>GitIgnore<<<<<<<<<<<
+
+let consider we have a project which have n number of files like file 1,2,3,4,...
+
+then let's assume there is one of these files, we don't wnat to add in git or don't keep track of that file.
+
+
+make a file and save with .gitignore
+inside that write a name of file/folder we don't need to keep track of.
+for e.g
+write index.html inside .gitignore file and index.html will be out of track of the git system.
+
+*.log => ignores all the file with the extension .log
+demo/ => ignores the demo folder.
+*.css
+*.js
+
+
+git init
+git status
+git add --a // git add.
+git commit -m "first commit"
+
+>>>>>>>>>LifeCycle of file status in GIT<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>>>>
+git diff => compares modified file to the staged file.
+git diff --staged => compares straged file to last commit.
+
+>>>>>>How to skip staging area and directly commit<<<<<<<
+git commit -a -m "changes in the file1"
+ files have to be staged at least once.
+ 
+ >>>>>>>How to unstage and unmodify<<<<<<<<<<<<<<<<<<<<<<<
+ 
+ after 
+ git add file1.txt
+then 
+git restore --staged file1.txt then it'll be unstaged.
+
+
+for unmodify
+git restore file1.txt
+
+for restoring all at once=>(git checkout -f)/(git checkout file3.txt)
+
+>>>>>>>>>>rename and moving a file in git<<<<<<<
+git mv file3.txt file4.txt(renamed)
+git rm file2.txt (deleted)
+
+git rm --cached file3.txt(.gitignore) because it was prevoiusly staged so it cache needs to be removed.
+
+
+>>>>>>Working on remote repository<<<<<<<<<
+
+git config user.name ""
+git config user.email ""
+git config --list
+
+ 
+
