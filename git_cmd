@@ -1,7 +1,10 @@
 git remote add origin https://github.com/codeTechSimplified/git_cmd.git
 git branch -M main
-git push -u origin main
+git push origin master
+codeTechSimplified 
+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
 
+it worked.//
 >>>>>>>>>GitIgnore<<<<<<<<<<<
 
 let consider we have a project which have n number of files like file 1,2,3,4,...
